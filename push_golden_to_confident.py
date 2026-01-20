@@ -3,7 +3,7 @@ import json
 
 from deepeval.dataset import EvaluationDataset, Golden
 
-data = json.load(open('data.json'))
+data = json.load(open('data/data.json'))
 test_data = data['test_data']
 
 # Construct Golden
