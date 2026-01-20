@@ -1,5 +1,6 @@
 # This file gives example of constructing golden from raw data(here json), adding golden to dataset and pushing them to Confident AI
 import json
+from typing import override
 
 from deepeval.dataset import EvaluationDataset, Golden
 
@@ -17,5 +18,6 @@ for item in test_data:
 
 # Construct the dataset
 data_set = EvaluationDataset(goldens=golden_ds)
-print(data_set)
+data_set.delete(alias="DataSet_Jan_20_26")
 data_set.push(alias="DataSet_Jan_20_26")
+
