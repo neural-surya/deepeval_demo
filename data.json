@@ -1,0 +1,12 @@
+{
+  "test_data": [
+    {
+      "input": "Who is the current president of the USA?",
+      "expected_output": "Joe Biden"
+    },
+    {
+      "input": "Who build the GPT 4.0 model?",
+      "expected_output": "OpenAI"
+    }
+  ]
+}
