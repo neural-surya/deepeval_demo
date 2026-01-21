@@ -20,7 +20,7 @@ model = OllamaModel(
     temperature=0
 )
 
-contextual_precision_metric = ContextualPrecisionMetric()
+contextual_precision_metric = ContextualPrecisionMetric(model=model, threshold=1.0)
 test_case = LLMTestCase(
     input="What are the types of Bias an LLM can generate, give me just the heading",
     actual_output=llm.invoke("What are the types of Bias an LLM can generate").content,
