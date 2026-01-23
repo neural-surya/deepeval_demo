@@ -57,8 +57,8 @@ chain = (
         | StrOutputParser()
 )
 
-response = chain.invoke("Where is the best place to eat Puri Upma in Berhampur?")
-print(response)
+# response = chain.invoke("Where is the best place to eat Puri Upma in Berhampur?")
+# print(response)
 
 
 
